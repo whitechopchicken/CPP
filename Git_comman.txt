@@ -1,0 +1,29 @@
+记录一下git 上传仓库的操作步骤：
+=====================
+1.在本地git clone 该仓库    ，并进入 
+2.创建新的分支：
+	查看master分支 ：
+		git branch 
+	创建新的分支：
+		git branch xxx
+	转换到新的分支
+		git switch xxx
+	在本地的仓库文件夹下创建一个子文件夹 xxx ，并进入它
+	然后...(在本地创建你想要上传的内容)   并保存
+3.往分支 xxx 提交你更新的内容：
+	git status    //查看当前在什么分支 ，会显示 On branch xxx
+	git add ./
+	git commit -m "描述这个文件"
+	git push origin xxx      //往分支xxx提交文件 ，或者说更新这个xxx分支
+	//完成后，可以在github 上查看这个分支，已经更新
+4.切换到master 分支
+	git switch master   //一开始默认叫main ，我改成了master
+	切换后，会在本地仓库显示maser分支的文件夹  。 而xxx分支文件夹会消失
+5.往master 分支添加文件   //提交操作和xxx分支一样
+	//前面只是为了确认现在在哪个分支
+	git status
+	git add ./
+	gi t commit -m "描述" 
+	git push origin master
+	
+	

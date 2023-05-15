@@ -26,4 +26,9 @@
 	gi t commit -m "描述" 
 	git push origin master
 	
+6.往master里面更新所有文件(新创的子文件夹
+	git status
+	git add -A
+	git commit -a -m "描述"   //提交修改过、但没有添加到缓存区的文件==修改过的就能提交
+	git push origin master -f
 	

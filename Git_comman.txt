@@ -1,5 +1,17 @@
 记录一下git 上传仓库的操作步骤：
 =====================
+	
+6.往master里面更新所有文件(新创的子文件夹
+	git status
+	git add -A 	//将当前目录下所有修改过的文件、删除的文件添加到暂存区  ==就是跟踪 修改/删除 的文件
+	git commit -a -m "描述"	//将(已跟踪的)文件的修改添加到暂存区，并创建一个新的提交(commit) 
+				//没有 -m "描述"  ，就会自动打开文本编辑器 喊你描述 。
+	git push origin master -f	//本地内容覆盖远程分支   -f 是强制执行，可以省略
+	
+	//git push origin master :把本地的上传到master
+	//git pull 把master的拉取到本地
+
+
 1.在本地git clone 该仓库    ，并进入 
 2.创建新的分支：
 	查看master分支 ：
@@ -25,11 +37,4 @@
 	git add ./
 	gi t commit -m "描述" 
 	git push origin master
-	
-6.往master里面更新所有文件(新创的子文件夹
-	git status
-	git add -A 	//将当前目录下所有修改过的文件、删除的文件添加到暂存区  ==就是跟踪 修改/删除 的文件
-	git commit -a -m "描述"	//将(已跟踪的)文件的修改添加到暂存区，并创建一个新的提交(commit) 
-				//没有 -m "描述"  ，就会自动打开文本编辑器 喊你描述 。
-	git push origin master -f	//本地内容覆盖远程分支   -f 是强制执行，可以省略
 	

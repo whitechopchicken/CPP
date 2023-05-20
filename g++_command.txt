@@ -1,3 +1,11 @@
-带有中文的字符串，用g++编译避免乱码的命令：
-	g++ -fexec-charset=GBK -o 文件名.exe 文件名.cpp
-	./文件名.exe
+	带有中文的字符串，用g++编译避免乱码的命令：
+		g++ -fexec-charset=GBK -o 文件名.exe 文件名.cpp
+		./文件名.exe
+编译+链接：
+	g++  文件名.cpp -o 文件名
+	./文件名     执行该文件
+仅编译：
+	g++  文件名 -c   //生成  文件名.o
+链接：
+	g++ 文件1.o  文件2.o .....文件n.o    -o 可执行文件名
+	比如：  g++  main.o  head1.o head2.o head3.o  -o main 

@@ -10,7 +10,8 @@
 	
 	//git push origin master :把本地的上传到master
 	//git pull 把master的拉取到本地
-
+	
+	//每次都先git pull 把远程的更新到本地； 完事后，再把本地的 git push 到远程
 
 1.在本地git clone 该仓库    ，并进入 
 2.创建新的分支：
